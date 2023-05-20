@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LastActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="19dp"
+            android:text="ID (is inside [ ] below) " />
+        <EditText
+            android:id="@+id/NumberDecimal"
+            android:layout_width="125dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="129dp"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Txtview10"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:text="TO UPDATE"
+        android:textSize="24dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Txtview11"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="30dp"
+        android:text="Is it Lost or Found? (update us by typing below)"
+        android:textSize="18dp"/>
+    <EditText
+        android:id="@+id/editTextText31"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:ems="10"
+        android:inputType="text"
+        android:layout_marginTop="140dp"
+        android:layout_marginLeft="30dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Txtview12"
+        android:text="Description (copy below &amp; type)"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="30dp"
+        android:textSize="18dp"/>
+    <EditText
+        android:id="@+id/editTextTextMultiLine31"
+        android:layout_width="316dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="30dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <TextView
+        android:id="@+id/Txtview13"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="370dp"
+        android:textSize="18dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/remove"
+        android:layout_gravity="end|center"
+        android:contentDescription="Update"
+        android:layout_margin="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="505dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="UPDATE" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CLOSE" />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
